@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
-import i18n from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 const Button = styled.button`
@@ -49,7 +47,7 @@ const Aside = styled.div`
   top: 10vh;
 `;
 
-function MobileNavBar(props) {
+function MobileNavBar() {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
   return (
